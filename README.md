@@ -10,9 +10,10 @@ Quick feature list:
 
 # Installation
 
-For MATLAB, simply add CPBASEX/pbasex-MATLAB/ to the MATLAB path.
+## Python
 
-For Python, a [pip](https://pip.pypa.io/en/stable/) installation is recommended. From the command line (perhaps using a [virtual environment](https://docs.python.org/3/tutorial/venv.html)), simply install the [PyPi CPBASEX distribution](https://pypi.python.org/pypi/pbasex):
+### Pip (RECOMMENDED)
+A [pip](https://pip.pypa.io/en/stable/) installation is recommended. From the command line (perhaps using a [virtual environment](https://docs.python.org/3/tutorial/venv.html)), simply install the [PyPi CPBASEX distribution](https://pypi.python.org/pypi/pbasex):
 ```sh
 $ pip3 install pbasex
 ```
@@ -34,6 +35,21 @@ The [dill](https://pypi.python.org/pypi/dill) is also required to parallelize th
 ```sh
 $ pip3 install dill
 ```
+
+### Install from Source
+```sh
+$ git clone https://github.com/congzlwag/CPBASEX.git
+```
+This will clone this fork repo into folder `CPBASEX`. No building is necessary. To import the package, adding `CPBASEX/pbasex-Python/pbasex/` to `sys.path` is sufficient.
+
+IF you perfer a complete installation
+```sh
+$ cd CPBASEX
+$ python setup.py install
+```
+
+## MATLAB
+Simply add `CPBASEX/pbasex-MATLAB/` to the MATLAB path.
 
 # Running the code
 
