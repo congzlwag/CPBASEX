@@ -12,8 +12,20 @@ Quick feature list:
 
 ## Python
 
-### Pip (RECOMMENDED)
-A [pip](https://pip.pypa.io/en/stable/) installation is recommended. From the command line (perhaps using a [virtual environment](https://docs.python.org/3/tutorial/venv.html)), simply install the [PyPi CPBASEX distribution](https://pypi.python.org/pypi/pbasex):
+### From Source (RECOMMENDED)
+```sh
+$ git clone https://github.com/congzlwag/CPBASEX.git
+```
+This will clone this fork repo into folder `CPBASEX`. No building is necessary. To import the package, adding `CPBASEX/pbasex-Python/pbasex/` to `sys.path` is sufficient.
+
+IF you perfer a complete installation
+```sh
+$ cd CPBASEX
+$ python setup.py install
+```
+
+### Using Pip 
+[pip](https://pip.pypa.io/en/stable/) is a great package manager. From the command line (perhaps using a [virtual environment](https://docs.python.org/3/tutorial/venv.html)), simply install the [PyPI CPBASEX distribution](https://pypi.python.org/pypi/pbasex):
 ```sh
 $ pip3 install pbasex
 ```
@@ -35,18 +47,8 @@ The [dill](https://pypi.python.org/pypi/dill) is also required to parallelize th
 ```sh
 $ pip3 install dill
 ```
+**Note** As of May2024, the PyPI CPBASEX distribution is still oudated compared to the git repo, specifically in loading h5 datasets. The git repo has been updated in commit [00ef967](https://github.com/e-champenois/CPBASEX/commit/00ef96760aafac042e81a3c5f4525c884e08d014). Until the PyPI distribution is also updated, following the pip installation, it is necessary to manually fix the source code according to commit [00ef967](https://github.com/e-champenois/CPBASEX/commit/00ef96760aafac042e81a3c5f4525c884e08d014). 
 
-### Install from Source
-```sh
-$ git clone https://github.com/congzlwag/CPBASEX.git
-```
-This will clone this fork repo into folder `CPBASEX`. No building is necessary. To import the package, adding `CPBASEX/pbasex-Python/pbasex/` to `sys.path` is sufficient.
-
-IF you perfer a complete installation
-```sh
-$ cd CPBASEX
-$ python setup.py install
-```
 
 ## MATLAB
 Simply add `CPBASEX/pbasex-MATLAB/` to the MATLAB path.
